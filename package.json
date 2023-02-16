@@ -1,0 +1,28 @@
+{
+  "name": "lorem-ipsum-airlines",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/shubham-dreamspring/lorem-ipsum-airlines.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/shubham-dreamspring/lorem-ipsum-airlines/issues"
+  },
+  "homepage": "https://github.com/shubham-dreamspring/lorem-ipsum-airlines#readme",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-purgecss": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.58.1"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3"
+  }
+}
