@@ -5,6 +5,11 @@ $font-size-base: 0.75rem;
 .root {
   width: 100vw;
   height: 100vh;
+   
+  & > img {
+    width: 100%;
+    height: 100vh;
+  }
 }
 nav {
   position: fixed;
@@ -20,12 +25,7 @@ nav {
   height: 100%;
   position: absolute;
   top: 0;
-  .card {
-    box-shadow: rgb(36 15 181 / 25%) 0px 50px 100px -20px,
-      rgb(20 19 86 / 30%) 0px 30px 60px -30px,
-      rgb(12 50 150 / 35%) 0px -2px 6px 0px inset;
-  }
-
+  
   a {
     width: 100%;
   }
