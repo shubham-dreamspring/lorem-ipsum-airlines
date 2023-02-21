@@ -1,2 +1,107 @@
+$font-size-base: 0.75rem;
+
 @import "../../node_modules/bootstrap/scss/bootstrap.scss";
 
+.root {
+  width: 100vw;
+  height: 100vh;
+}
+nav {
+  position: fixed;
+  width: 100%;
+  img {
+    width: 8rem;
+    min-width: 110px;
+  }
+}
+
+.search-form {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  .card {
+    box-shadow: rgb(36 15 181 / 25%) 0px 50px 100px -20px,
+      rgb(20 19 86 / 30%) 0px 30px 60px -30px,
+      rgb(12 50 150 / 35%) 0px -2px 6px 0px inset;
+  }
+
+  a {
+    width: 100%;
+  }
+  .row > * {
+    margin-bottom: 1rem;
+  }
+  :last-child {
+    margin-bottom: 0;
+  }
+}
+label {
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+label :first-child {
+  display: inline-block;
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+#to-icon {
+  background-image: url(../../assets/svg/from.svg);
+}
+#from-icon {
+  background-image: url(../../assets/svg/to.svg);
+}
+#date-icon {
+  background-image: url(../../assets/svg/date.svg);
+}
+.search-results {
+  width: 100%;
+  height: 77vh;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  .accordion-header .row .col:first-of-type {
+    background-image: url(../../assets/air-asia-logo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 3rem;
+  }
+}
+.round-border {
+  border: 2px solid black;
+  border-radius: 12px;
+  box-sizing: border-box;
+  height: 12px;
+  width: 12px;
+}
+.dotted-border {
+  border-right: 4px dotted black;
+  flex: 1;
+  margin-bottom: 4px;
+  margin-top: 4px;
+  width: 4px;
+}
+
+.flight-details {
+  .main {
+    height: 40%;
+    font-size: 1.2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+
+    .row .flight-icon {
+      height: 4rem;
+      background-image: url(../../assets/air-asia-logo.png);
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: 3rem;
+    }
+  }
+
+  .aeroplane-img {
+    width: 2rem;
+    height: 2rem;
+  }
+}
