@@ -18,7 +18,7 @@
               class="d-inline-block align-text-top"
             />
           </a>
-          <button type="button" class="btn btn-primary">Log in</button>
+          <a type="button" class="btn btn-primary" href="#">Log in</a>
         </div>
       </nav>
       <img src="assets/background.jpg" />
@@ -31,43 +31,58 @@
               <div class="card-body">
                 <h4 class="card-title">Search your flights ...</h4>
                 <div class="my-3">
-                  <div class="row">
-                    <label>
-                      <span id="to-icon"></span>
-                      <select class="form-select form-select-lg d-inline-block">
-                        <option hidden disabled selected value="0">
-                          Where from ?
-                        </option>
-                        <option value="1">Benguluru</option>
-                        <option value="2">New Delhi</option>
-                        <option value="3">Lucknow</option>
-                      </select>
-                    </label>
-                    <label>
-                      <span id="from-icon"></span>
-                      <select class="form-select form-select-lg d-inline-block">
-                        <option hidden disabled selected value="0">
-                          Where to ?
-                        </option>
-                        <option value="1">Lucknow</option>
-                        <option value="2">Ghaziabad</option>
-                        <option value="3">Ujjain</option>
-                      </select>
-                    </label>
-                    <label>
-                      <span id="date-icon"></span>
-                      <input type="date" class="form-control form-control-lg" />
-                    </label>
-                    <div class="row justify-content-center m-0">
-                      <div class="col-6 col-md-4">
-                        <a
-                          href="pages/search-result.html"
-                          class="btn btn-primary"
-                          >Search</a
+                  <form action="pages/search-result.html" method="get">
+                    <div class="row">
+                      <label>
+                        <span id="to-icon"></span>
+                        <select
+                          class="form-select form-select-lg d-inline-block"
+                          name="where"
                         >
+                          <option hidden disabled selected value="0">
+                            Where from ?
+                          </option>
+                          <option value="1">Benguluru</option>
+                          <option value="2">New Delhi</option>
+                          <option value="3">Lucknow</option>
+                        </select>
+                      </label>
+                      <label>
+                        <span id="from-icon"></span>
+                        <select
+                          class="form-select form-select-lg d-inline-block"
+                          name="to"
+                        >
+                          <option hidden disabled selected value="0">
+                            Where to ?
+                          </option>
+                          <option value="1">Lucknow</option>
+                          <option value="2">Ghaziabad</option>
+                          <option value="3">Ujjain</option>
+                        </select>
+                      </label>
+                      <label>
+                        <span id="date-icon"></span>
+                        <input
+                          type="date"
+                          name="date"
+                          class="form-control form-control-lg"
+                          min="2023-07-22"
+                          max="2023-12-31"
+                          required
+                        />
+                      </label>
+                      <div class="row justify-content-center m-0">
+                        <div class="col-6 col-md-4">
+                          <input
+                            type="submit"
+                            value="submit"
+                            class="btn btn-primary"
+                          />
+                        </div>
                       </div>
                     </div>
-                  </div>
+                  </form>
                 </div>
               </div>
             </div>
