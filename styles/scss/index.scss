@@ -118,7 +118,10 @@ footer {
     box-shadow: none;
   }
 }
-
+.form-select:focus,
+.form-control:focus {
+  box-shadow: none;
+}
 @media (max-width: 456px) {
   .search-results {
     height: 65vh;
